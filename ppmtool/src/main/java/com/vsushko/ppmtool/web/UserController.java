@@ -1,7 +1,7 @@
 package com.vsushko.ppmtool.web;
 
 import com.vsushko.ppmtool.domain.User;
-import com.vsushko.ppmtool.payload.JWTLoginSucessReponse;
+import com.vsushko.ppmtool.payload.JWTLoginSuccessResponse;
 import com.vsushko.ppmtool.payload.LoginRequest;
 import com.vsushko.ppmtool.security.JwtTokenProvider;
 import com.vsushko.ppmtool.services.MapValidationErrorService;
@@ -78,6 +78,6 @@ public class UserController {
         SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = TOKEN_PREFIX + tokenProvider.generateToken(authentication);
 
-        return ResponseEntity.ok(new JWTLoginSucessReponse(true, jwt));
+        return ResponseEntity.ok(new JWTLoginSuccessResponse(true, jwt));
     }
 }

@@ -3,12 +3,12 @@ package com.vsushko.ppmtool.payload;
 /**
  * @author vsushko
  */
-public class JWTLoginSucessReponse {
+public class JWTLoginSuccessResponse {
 
     private boolean success;
     private String token;
 
-    public JWTLoginSucessReponse(boolean success, String token) {
+    public JWTLoginSuccessResponse(boolean success, String token) {
         this.success = success;
         this.token = token;
     }

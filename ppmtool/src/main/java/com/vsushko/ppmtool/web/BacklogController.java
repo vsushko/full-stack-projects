@@ -20,12 +20,13 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 import java.security.Principal;
 
+
 /**
  * @author vsushko
  */
 @RestController
-@RequestMapping("/api/backlog")
 @CrossOrigin
+@RequestMapping("/api/backlog")
 public class BacklogController {
 
     @Autowired
@@ -80,4 +81,3 @@ public class BacklogController {
         return new ResponseEntity<>("Project task " + pt_id + " was deleted successfully", HttpStatus.OK);
     }
 }
-

@@ -18,23 +18,22 @@ Architecture of this repo:
 ### Folder structure
 ```sh
 ppmtool/
-├── public                         # Public files used on the frontend
-├── ppmtool-react-client/src/      # Frontend SPA
-├──── actions                      # Actions which would be dispatched on the store
-├──── components                   # App components
-├──── reducers                     # State changing functions
-├──── securityUtils                # Security Utils
-├── src/                           # Spring boot Java app
-├──── java/com/vsushko/ppmtool/src # Spring Boot Java app
-├────── domain                     # Domain objects
-├────── exceptions                 # App exceptions
-├────── payload                    # DTOs
-├────── repositories               # DAO interfaces for providing CRUD operations on database tables
-├────── security                   # JwtAuthentication
-├────── services                   # Business functionalities
-├────── validator                  # Bean Validations
-├────── web                        # Controller classes for the request handling
-├──── resources                    # App resourcess
+├── public                    # Public files used on the frontend
+├── ppmtool-react-client/src/ # Frontend SPA
+├──── actions                 # Actions which would be dispatched on the store
+├──── components              # App components
+├──── reducers                # State changing functions
+├──── securityUtils           # Security Utils
+├── src/                      # Spring boot Java app
+├──── domain                  # Domain objects
+├──── exceptions              # App exceptions
+├──── payload                 # DTOs
+├──── repositories            # DAO interfaces for providing CRUD operations on database tables
+├──── security                # JwtAuthentication
+├──── services                # Business functionalities
+├──── validator               # Bean Validations
+├──── web                     # Controller classes for the request handling
+├──── resources               # App resourcess
 ```
 
 
@@ -68,6 +67,4 @@ Design, develop and unit test the business tier
 Design, develop and unit test the data access tier
 Design, develop and unit test the resource (entity) tier
 Popular patterns and best practices writing a complete Spring and Hibernate based relational database driven Java web application
-
-
 -->

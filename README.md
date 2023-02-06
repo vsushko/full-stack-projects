@@ -1,9 +1,9 @@
 # Full stack projects
 
-## Todo full stack application (Java & Spring Boot, JavaScript & React, MySQL)
+## Ppmtool full stack application (Java & Spring Boot, JavaScript & React, MySQL)
 A full-stack application written in Java & JavaScript that demonstrates using of such technologies as Spring Boot, React/Redux, MySQL DB and Bootstrap.
 
-For more details check [project readme](https://github.com/vsushko/full-stack-projects/blob/master/todo-app/README.md).
+For more details check [project readme](https://github.com/vsushko/full-stack-projects/blob/master/ppmtool/README.md).
 
 <img src="https://github.com/vsushko/full-stack-projects/blob/master/img/todo-app.png" width="350" height="250">
 

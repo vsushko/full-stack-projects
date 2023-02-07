@@ -53,7 +53,7 @@ ppmtool/
 | project_identifier | project identifier |
 | description | project description |
 | start_date | project starting date |
-| end_date | projet end date |
+| end_date | projeсt end date |
 | created_at | date when project task was created |
 | updated_at | date when project task was updated |
 | user_id | link to the related user |

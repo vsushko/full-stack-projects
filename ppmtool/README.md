@@ -36,13 +36,62 @@ ppmtool/
 ├──── resources               # App resourcess
 ```
 
+## Data
+### List of entities:
 
+- Backlog - describes backlog entity
+- Project - describes project entity
+- ProjectTask - describes project task entity
+- User - describes user
+
+#### project
+| column  | description |
+| ------------- | ------------- |
+| id  | identifier |
+| project_name | project name |
+| project_identifier | project identifier |
+| description | project description |
+| start_date | project starting date |
+| end_date | projet end date |
+| created_at | date when project task was created |
+| updated_at | date when project task was updated |
+
+#### backlog
+| column  | description |
+| ------------- | ------------- |
+| id  | identifier |
+| ptsequence | sequence of project tasks within each backlog |
+| project_identifier | the same identifier as a project |
+
+#### project_task
+| column  | description |
+| ------------- | ------------- |
+| id | identifier |
+| project_sequence | projectIdentifier + 1 |
+| summary | header of project task |
+| acceptance_criteria | user information |
+| status | status for traversing of the board |
+| priority | for grouping tasks |
+| due_date | task due date |
+| create_at | date when project task was created |
+| update_at | date when project task was updated |
+| project_identifier | store id here for persisting tasks related for specific backlog |
+
+#### user
+| column  | description |
+| ------------- | ------------- |
+| id  | identifier |
+| username | user name |
+| fullName | user full name |
+| password | user's password |
+| confirm_password | user's password confirmation |
+| create_at | date when user was created |
+| update_at | date when user was updated |
+
+### Entity–relationship model
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/ppmtool-er-model.png" width="700" height="600">
 
 <!--We will build our REST APIs with Spring boot for CRUD operations
-## Frontend
-## Features
-
-## Backend
 ## Features
 
 ## Browser: Client interaction
@@ -50,7 +99,6 @@ ppmtool/
 ## Webserver
 ## Application Server
 ## Database Server
-## Data
 
 We will create our front end using ReactJS and Boostrap
 

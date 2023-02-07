@@ -49,12 +49,15 @@ ppmtool/
 | ------------- | ------------- |
 | id  | identifier |
 | project_name | project name |
+| project_leader | project leader |
 | project_identifier | project identifier |
 | description | project description |
 | start_date | project starting date |
 | end_date | projet end date |
 | created_at | date when project task was created |
 | updated_at | date when project task was updated |
+| user_id | link to the related user |
+
 
 #### backlog
 | column  | description |
@@ -62,12 +65,12 @@ ppmtool/
 | id  | identifier |
 | ptsequence | sequence of project tasks within each backlog |
 | project_identifier | the same identifier as a project |
+| project_id | link to the related project |
 
 #### project_task
 | column  | description |
 | ------------- | ------------- |
 | id | identifier |
-| project_sequence | projectIdentifier + 1 |
 | summary | header of project task |
 | acceptance_criteria | user information |
 | status | status for traversing of the board |
@@ -76,15 +79,16 @@ ppmtool/
 | create_at | date when project task was created |
 | update_at | date when project task was updated |
 | project_identifier | store id here for persisting tasks related for specific backlog |
+| project_sequence | projectIdentifier + 1 |
+| backlog_id | link to related backlog |
 
 #### user
 | column  | description |
 | ------------- | ------------- |
 | id  | identifier |
 | username | user name |
-| fullName | user full name |
+| full_name | user full name |
 | password | user's password |
-| confirm_password | user's password confirmation |
 | create_at | date when user was created |
 | update_at | date when user was updated |
 

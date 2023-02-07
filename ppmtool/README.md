@@ -93,7 +93,7 @@ ppmtool/
 | update_at | date when user was updated |
 
 ### Entity–relationship model
-<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/ppmtool-er-model.png" width="700" height="600">
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/ppmtool-er-model.png" width="800" height="600">
 
 <!--We will build our REST APIs with Spring boot for CRUD operations
 ## Features

@@ -9,7 +9,7 @@ PPMTool stands for personal project management tool. This application is written
 ### Technologies
 
 Architecture of this repo:
-- **Full-stack JavaScript and Java:** The Java programming language is useed in the backend, and React on the frontend. Here is a lists of all the big technologies which is used:
+- **Full-stack JavaScript and Java:** The Java programming language is used in the backend, and React on the frontend. Here is a lists of all the big technologies which is used:
 - **Spring Boot:** Backend Java app
 - **Flowtype**: Type-safe JavaScript
 - **React:** Frontend React app

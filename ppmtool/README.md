@@ -95,6 +95,42 @@ ppmtool/
 ### Entity–relationship model
 <img src="https://github.com/vsushko/full-stack-projects/blob/master/img/ppmtool-er-model.png" width="800" height="600">
 
+## Sequence diagrams
+
+### Sign Up processs diagram
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/sign-up-diagram.png" width="700" height="400">
+
+#### Login page
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/login-page.png" width="700" height="400">
+
+#### Sign up form
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/sign-up-form.png" width="700" height="400">
+
+### Create project diagram
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/create-project-diagram.png" width="700" height="400">
+
+#### Create project form
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/create-project-form.png" width="700" height="400">
+
+#### Project list page
+Project actions:
+- View project task page
+- Update Project Info
+- Delete Project
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/project-list-page.png" width="700" height="400">
+
+### Create project task diagram
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/create-project-task-diagram.png" width="700" height="400">
+
+#### Create project task form
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/add-project-task-diagram.png" width="700" height="400">
+
+#### Project task page
+Project actions:
+- View/Update project task (with changing status)
+- Delete Project task
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/backlog-page.png" width="700" height="400">
+
 <!--We will build our REST APIs with Spring boot for CRUD operations
 ## Features
 

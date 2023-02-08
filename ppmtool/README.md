@@ -9,7 +9,7 @@ PPMTool stands for personal project management tool. This application is written
 ### Technologies
 
 Architecture of this repo:
-- **Full-stack JavaScript and Java:** The Java programming language is useed in the backend, and React on the frontend. Here is a lists of all the big technologies which is used:
+- **Full-stack JavaScript and Java:** The Java programming language is used in the backend, and React on the frontend. Here is a lists of all the big technologies which is used:
 - **Spring Boot:** Backend Java app
 - **Flowtype**: Type-safe JavaScript
 - **React:** Frontend React app
@@ -36,13 +36,66 @@ ppmtool/
 ├──── resources               # App resourcess
 ```
 
+## Data
+### List of entities:
 
+- Backlog - describes backlog entity
+- Project - describes project entity
+- ProjectTask - describes project task entity
+- User - describes user
+
+#### project
+| column  | description |
+| ------------- | ------------- |
+| id  | identifier |
+| project_name | project name |
+| project_leader | project leader |
+| project_identifier | project identifier |
+| description | project description |
+| start_date | project starting date |
+| end_date | projeсt end date |
+| created_at | date when project task was created |
+| updated_at | date when project task was updated |
+| user_id | link to the related user |
+
+
+#### backlog
+| column  | description |
+| ------------- | ------------- |
+| id  | identifier |
+| ptsequence | sequence of project tasks within each backlog |
+| project_identifier | the same identifier as a project |
+| project_id | link to the related project |
+
+#### project_task
+| column  | description |
+| ------------- | ------------- |
+| id | identifier |
+| summary | header of project task |
+| acceptance_criteria | user information |
+| status | status for traversing of the board |
+| priority | for grouping tasks |
+| due_date | task due date |
+| create_at | date when project task was created |
+| update_at | date when project task was updated |
+| project_identifier | store id here for persisting tasks related for specific backlog |
+| project_sequence | projectIdentifier + 1 |
+| backlog_id | link to related backlog |
+
+#### user
+| column  | description |
+| ------------- | ------------- |
+| id  | identifier |
+| username | user name |
+| full_name | user full name |
+| password | user's password |
+| create_at | date when user was created |
+| update_at | date when user was updated |
+
+### Entity–relationship model
+<img src="https://github.com/vsushko/full-stack-projects/blob/master/img/ppmtool-er-model.png" width="800" height="600">
 
 <!--We will build our REST APIs with Spring boot for CRUD operations
-## Frontend
-## Features
-
-## Backend
 ## Features
 
 ## Browser: Client interaction
@@ -50,7 +103,6 @@ ppmtool/
 ## Webserver
 ## Application Server
 ## Database Server
-## Data
 
 We will create our front end using ReactJS and Boostrap
 
